@@ -1,0 +1,11 @@
+alembic==1.11.1
+asyncpg==0.28.0
+fastapi==0.100.0
+sqlmodel==0.0.8
+uvicorn==0.22.0
+google-api-python-client==2.95.0
+pandas==2.0.3
+pytube==15.0.0
+shazamio==0.4.0.1
+ffmpeg==1.4
+ffprobe==0.5
