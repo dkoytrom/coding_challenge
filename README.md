@@ -1,5 +1,5 @@
 # Coding challenge: YouTube Video Downloader, Audio Converter, and Metadata Extractor Web Service
-This project is for the coding challenge. It is a FastApi based we service which used Youtube Data API to fetch the metadata of the videos, with the ability to download the video, convert the video to an audio file with pytube library, recognizing videos with ShazamIO library and saving metadata in a csv file. 
+FastApi based we service which used Youtube Data API to fetch the metadata of the videos, with the ability to download the video, convert the video to an audio file with pytube library, recognizing videos with ShazamIO library and saving metadata in a csv file. 
 This application works in two ways:
 
 * It can run locally with the storage being the csv file, videos and audio are saved under the streams folder
@@ -135,13 +135,3 @@ curl -X 'DELETE' \
 $ source .venv/bin/activate
 $ uvicorn main:app --workers 1 --reload --port 8080
 ```
-
-# Deliverables:
-* source code API interaction, video download, audio extraction, audio recognition, and CSV data manipulation (main.py, metadata.py) 
-* csv file with the donwloaded videos (storage.csv)
-* videos and audio files under streams folder
-* README file with necessary notes
-
-# Notes:
-* There are two versions, one for local execution and one that can be directly migrated into docker container (inside folder Deliverables/code_files_to_use_for_docker_container)
-* Folder fastapi-sqlmodel-alembic-videos is the container image with the code already integrated and ready to run
